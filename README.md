@@ -1,40 +1,16 @@
-# gravity-ui-vite-example
-
-Vite template with: typescript, sass and Gravity UI.
-
-## ⚗️ Technologies list
-
-- [Gravity UI](https://gravity-ui.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Sass](https://sass-lang.com/)
-- [ESlint](https://eslint.org/) & [Prettier](https://prettier.io/)
-
-# 🚀 Start using it
-
-To use this template for your app you can run:
-
-```sh
-npx degit gravity-ui/gravity-ui-vite-example#main my-project
-cd my-project
-
-npm install
-npm run dev
-```
-
-or
-
-```sh
-yarn degit gravity-ui-vite-example#main my-project
-cd my-project
-
-npm install
-npm run dev
-```
-
-# 📖 Learn More
-
-This package includes scripts and configuration used by [Vite](https://vitejs.dev/).\
-Please refer to its documentation:
-
-- [Getting Started](https://vitejs.dev/guide/) – How to create a new app.
-- [User Guide](https://vitejs.dev/) – How to develop apps bootstrapped with Vite.
+Методы
+	GET /applications: Получить список всех заявок.
+	POST /applications: Создать новую заявку.
+	GET /applications/{id}: Получить информацию о заявке с указанным идентификатором.
+	PUT /applications/{id}: Обновить информацию о заявке с указанным идентификатором.
+	DELETE /applications/{id}: Удалить заявку с указанным идентификатором.
+Поля
+	id (integer): Уникальный идентификатор заявки.
+	number (string): Номер заявки.
+	datetime (string): Дата и время получения заявки от клиента (формат: YYYY-MM-DDTHH:MM:SS).
+	clientCompany (string): Название фирмы клиента.
+	carrierFullName (string): ФИО перевозчика.
+	carrierPhone (string): Контактный телефон перевозчика.
+	comments (string, optional): Комментарии к заявке.
+	status (string): Статус заявки (new, in_progress, completed).
+	ati (string): ATI код сети перевозчика.
