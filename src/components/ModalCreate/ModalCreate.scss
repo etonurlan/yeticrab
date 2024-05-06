@@ -1,0 +1,33 @@
+.modal-params {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.modal-params:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.modal-params:first-child {
+    padding-top: 10px;
+}
+
+.modal-params:last-child {
+    padding-bottom: 10px;
+}
+
+.modal-span {
+    color: grey;
+    font-weight: 600;
+}
+
+.modal-comment {
+    max-width: 500px;
+    word-break: break-word;
+}
+
+.button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
